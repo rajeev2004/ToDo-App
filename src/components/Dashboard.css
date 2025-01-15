@@ -1,0 +1,172 @@
+body{
+    background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+}
+*{
+    box-sizing: border-box;
+}
+.hamburger-menu{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+button{
+    cursor: pointer;
+    flex: 0 0 auto;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    transition: all 0.4s ease-in-out;
+}
+.nav-item button{
+    background-color: white;
+    color: black;
+    border: 0;
+    margin: 20px 20px;
+    border-radius: 10px;
+    transition: all 0.4s ease-in-out;
+}
+.nav-item button:hover{
+    transform: scale(1.3);
+}
+.navbar-nav{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.collapse{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #4169E1;
+    flex-wrap: wrap;
+}
+.navbar{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.container-fluid{
+    width: 100%;
+    padding: 0;
+    margin-top: 0;
+}
+.taskInput-container form{
+    padding-bottom: 15px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.create-task input{
+    border: skyblue 1px solid;
+    border-radius: 10px;
+    padding: 15px;
+}
+.create-task input:focus{
+    outline: none;
+}
+.create-task select{
+    border: skyblue 1px solid;
+    border-radius: 10px;
+}
+.create-task select:focus{
+    outline: none;
+}
+.create-task button{
+    border: 0;
+    border-radius: 10px;
+    color: black;
+    transition: all 0.4s ease-in-out;
+    background-color: white;
+}
+.create-task button:hover{
+    background-color: palevioletred;
+    transform: scale(1.3);
+}
+.taskInput-container{
+    margin: 0;
+    background-color: #4169E1;
+    padding-top: 10px;
+}
+.task-list{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    height: 100vh;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.All-task{
+    border: 1px lightslategray solid;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+}
+.insideListContainer{
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+.taskListContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+.component{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+.component1 p{
+    margin-bottom: 0;
+    flex: 1;
+    min-width: 0;
+    overflow-wrap: break-word;
+    white-space: normal;
+    width: 100%;
+    word-wrap: break-word;
+}
+.star-btn{
+    border: 0;
+}
+.star-btn:hover{
+    outline: none;
+}
+.delete-btn{
+    border: 0;
+}
+.delete-btn:hover{
+    background-color: red;
+    transform: scale(1.3);
+}
+.logout-btn:hover{
+    background-color: brown;
+    transform: scale(1.3);
+}
+.container{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container form button{
+    margin: 10px;
+    border: 1px black solid;
+}
+.container form button:hover{
+    background-color: yellow;
+    transform: scale(1.3);
+}
+.container form input{
+    padding: 5px;
+}
