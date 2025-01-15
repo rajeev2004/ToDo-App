@@ -7,7 +7,7 @@ function App(){
   return(
     <Router>
       <div>
-          <Routes>
+          <Routes basename="/ToDo-App">
               <Route exact path="/" element={<Login />}/>
               <Route path="/dashboard" element={<Dashboard />}/>
               <Route path="*" element={<Notfound />}/>
