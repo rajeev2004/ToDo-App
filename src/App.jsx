@@ -5,9 +5,9 @@ import Dashboard from "./components/Dashboard";
 import Notfound from "./components/Notfound";
 function App(){
   return(
-    <Router>
+    <Router basename="/ToDo-App">
       <div>
-          <Routes basename="/ToDo-App">
+          <Routes>
               <Route exact path="/" element={<Login />}/>
               <Route path="/dashboard" element={<Dashboard />}/>
               <Route path="*" element={<Notfound />}/>
