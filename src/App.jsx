@@ -5,7 +5,7 @@ import Dashboard from "./components/Dashboard";
 import Notfound from "./components/Notfound";
 function App(){
   return(
-    <Router basename="/ToDo-App">
+    <Router>
       <div>
           <Routes>
               <Route exact path="/" element={<Login />}/>
