@@ -7,21 +7,19 @@ function Dashboard(){
     const navigate=useNavigate();
     const[tasks,setTask]=useState([]);
     const[type,setType]=useState("all");
-    const[loading,setLoading]=useState(false);
     useEffect(()=>{
         const savedTask=localStorage.getItem('tasks');
         if(savedTask){
             console.log("Loading tasks from localStorage:",savedTask);
             setTask(JSON.parse(savedTask));
-            setLoading(true);
         }
     },[]);
     useEffect(()=>{
-        if(loading){
+        if(tasks.length>0){
             console.log("Saving tasks to localStorage:",tasks);
             localStorage.setItem('tasks',JSON.stringify(tasks));
         }
-    },[tasks,loading]);
+    },[tasks]);
     async function addTask(task){
         const newTask={...task,id:Date.now()};
         setTask((prev)=>[...prev,newTask]);
