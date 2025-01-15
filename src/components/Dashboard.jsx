@@ -16,8 +16,9 @@ function Dashboard(){
     },[]);
     useEffect(()=>{
         if(tasks.length>0){
-            console.log("Saving tasks to localStorage:",tasks);
-            localStorage.setItem('tasks',JSON.stringify(tasks));
+            if(typeof window!=='undefined'){
+                localStorage.setItem('tasks',JSON.stringify(tasks));
+            }
         }
     },[tasks]);
     async function addTask(task){
